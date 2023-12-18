@@ -1,0 +1,6 @@
+function obtenerPrimero<T>(arr: T[]): T | undefined {
+    return arr.length > 0 ? arr[0] : undefined;
+}
+
+let primeroNumero = obtenerPrimero([1, 2, 3]);        // Tipo inferido: number | undefined
+let primeroString = obtenerPrimero(["a", "b", "c"]);  // Tipo inferido: string | undefined
